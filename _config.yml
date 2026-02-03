@@ -5,9 +5,9 @@
 
 #######################################################################################
 # Book settings
-title: IOER RDC training materials for spatial data
-author: Claudia Dworczyk, Alexander Dunkel, Fatemeh Rafiei, Ralf-Uwe Syrbe, and IOER Colleagues
-copyright                   : "2025"  # Copyright year to be placed in the footer
+title: Sustainability Transformation Hackathon (IOER Conference 2026)
+author: TBD
+copyright                   : "2026"  # Copyright year to be placed in the footer
 logo                        : "logo.svg"  # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
@@ -18,7 +18,6 @@ only_build_toc_files        : true
 execute:
   execute_notebooks         : "off"  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
   cache                     : ""    # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/`
-  exclude_patterns          : ["*training_material_V2*"]    # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
   timeout                   : 30    # The maximum time (in seconds) each notebook cell is allowed to run.
   run_in_temp               : false # If `True`, then a temporary directory will be created and used as the command working directory (cwd),
                                     # otherwise the notebook's parent directory will be the cwd.
@@ -39,7 +38,7 @@ html:
   use_repository_button     : true  # Whether to add a link to your repository button
   use_issues_button         : false  # Whether to add an "open an issue" button
   extra_footer              : |
-    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">2025 Creative Commons CC BY 4.0</a><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a> and the OSS Community<br><a href="https://www.ioer.de/en/imprint">Imprint </a> | <a href="https://www.ioer.de/en/data-protection-statement">Data protection </a> | <a href="https://www.ioer.de/en/declaration-on-accessibility">Accessibility </a>
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">2026 Creative Commons CC BY 4.0</a><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a> and the OSS Community<br><a href="https://www.ioer.de/en/imprint">Imprint </a> | <a href="https://www.ioer.de/en/data-protection-statement">Data protection </a> | <a href="https://www.ioer.de/en/declaration-on-accessibility">Accessibility </a>
   home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
   baseurl                   : "https://hack.conference.ioer.info/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
@@ -63,7 +62,7 @@ launch_buttons:
   # colab_url                 : https://colab.research.google.com # The URL of Google Colab (e.g., https://colab.research.google.com)
 
 repository:
-  url                       : https://github.com/ioer-dresden/jupyter-book-nfdi4biodiversity  # The URL to your book's repository
+  url                       : https://github.com/ioer-dresden/hackathon-ioer-conference-2026  # The URL to your book's repository
   path_to_book              : ""  # A path to your book's folder, relative to the repository root.
   branch                    : main  # Which branch of the repository should be used when creating links
 

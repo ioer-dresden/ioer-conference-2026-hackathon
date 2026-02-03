@@ -5,49 +5,82 @@ parts:
   chapters:
   - file: notebooks/00_toc
 
-- caption: Part I - Introduction
+# ---------------------------------------------------------------
+# PART I: THE STARTER KIT
+# Get people running immediately with environment & data access
+# ---------------------------------------------------------------
+- caption: Part I - The Starter Kit
   chapters:
-  - file: notebooks/101_theory_chapters
   - file: notebooks/102_jupyter_notebooks
-
-- caption: Part II - Workflow
-  chapters:
-  - file: notebooks/201_example_introduction
-  - file: notebooks/202_data_retrieval_gbif
+    title: Setup & Computing Environment
   - file: notebooks/203_data_retrieval_monitor
-  - file: notebooks/204_analysis
-  - file: notebooks/205_publish
+    title: Accessing IOER Monitor Data (API)
+  - file: notebooks/202_data_retrieval_gbif
+    title: Accessing Biodiversity Data (GBIF)
+  - file: notebooks/201_example_introduction
+    title: Workflow Example: Urban Green
 
-- caption: Part III - Reference documentation
+# ---------------------------------------------------------------
+# PART II: THE CHALLENGE
+# Explain the rules, topics, and how to submit a PR
+# ---------------------------------------------------------------
+- caption: Part II - The Challenge
+  chapters:
+  - file: CONTRIBUTING
+    title: How to Contribute (Pull Requests)
+  - file: notebooks/challenge_topics
+    title: Challenge Topics & Context
+    # ^ You will need to create this brief notebook explaining the 4 topics (Resilience, Circularity, etc.)
+  - file: notebooks/contribution_template
+    title: Submission Template
+    # ^ Recommendation: Create a clean notebook template for them to copy
+
+# ---------------------------------------------------------------
+# PART III: RESULTS
+# This section grows as people merge their PRs
+# ---------------------------------------------------------------
+- caption: Part III - Community Contributions
+  chapters:
+  - file: notebooks/community_index
+    title: List of Submitted Hacks
+    # ^ Placeholder that indexes the contributions once they arrive
+
+# ---------------------------------------------------------------
+# PART IV: TOOLBOX / REFERENCE
+# The technical "How-To" library (kept from training materials)
+# ---------------------------------------------------------------
+- caption: Part IV - Toolbox & Reference
   chapters:
   - file: notebooks/301_accessing_data
-    title: Accessing data
+    title: Reading Spatial Data
   - file: notebooks/302_file_formats
   - file: notebooks/303_projections
   - file: notebooks/304_selecting_and_filtering
   - file: notebooks/305_mapping
+    title: Creating Maps
   - file: notebooks/306_spatial_clipping
   - file: notebooks/307_merging_data
   - file: notebooks/308_spatial_overlays
   - file: notebooks/309_buffering
   - file: notebooks/310_statistics
     title: Descriptive Statistics
-  
-- caption: Further Reading
+  - file: notebooks/205_publish
+    title: Publishing Results
+
+# ---------------------------------------------------------------
+# INSPIRATION & META
+# ---------------------------------------------------------------
+- caption: Inspiration & Examples
+  chapters:
+  - file: notebooks/501_milvus_maps
+    title: Red Kite (Milvus milvus)
+  - file: notebooks/502_geosocialmedia
+    title: Geosocial Patterns
+
+- caption: Project Info
   chapters:
   - file: BIBLIOGRAPHY
     title: Bibliography
   - file: notebooks/401_endmatter-thanks
-
-
-- caption: Further Datasets
-  chapters:
-  - file: notebooks/501_milvus_maps
-  - file: notebooks/502_geosocialmedia
-
-- caption: Developers
-  chapters:
-  - file: CONTRIBUTING
-    title: Contributing
   - file: CHANGELOG
     title: Changelog
