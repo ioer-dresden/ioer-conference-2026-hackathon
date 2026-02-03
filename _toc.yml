@@ -1,0 +1,53 @@
+format: jb-book
+root: intro
+parts:
+- caption: Preface
+  chapters:
+  - file: notebooks/00_toc
+
+- caption: Part I - Introduction
+  chapters:
+  - file: notebooks/101_theory_chapters
+  - file: notebooks/102_jupyter_notebooks
+
+- caption: Part II - Workflow
+  chapters:
+  - file: notebooks/201_example_introduction
+  - file: notebooks/202_data_retrieval_gbif
+  - file: notebooks/203_data_retrieval_monitor
+  - file: notebooks/204_analysis
+  - file: notebooks/205_publish
+
+- caption: Part III - Reference documentation
+  chapters:
+  - file: notebooks/301_accessing_data
+    title: Accessing data
+  - file: notebooks/302_file_formats
+  - file: notebooks/303_projections
+  - file: notebooks/304_selecting_and_filtering
+  - file: notebooks/305_mapping
+  - file: notebooks/306_spatial_clipping
+  - file: notebooks/307_merging_data
+  - file: notebooks/308_spatial_overlays
+  - file: notebooks/309_buffering
+  - file: notebooks/310_statistics
+    title: Descriptive Statistics
+  
+- caption: Further Reading
+  chapters:
+  - file: BIBLIOGRAPHY
+    title: Bibliography
+  - file: notebooks/401_endmatter-thanks
+
+
+- caption: Further Datasets
+  chapters:
+  - file: notebooks/501_milvus_maps
+  - file: notebooks/502_geosocialmedia
+
+- caption: Developers
+  chapters:
+  - file: CONTRIBUTING
+    title: Contributing
+  - file: CHANGELOG
+    title: Changelog

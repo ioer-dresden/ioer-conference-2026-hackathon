@@ -1,0 +1,181 @@
+stages:
+  # - test
+  - build-staging
+  - build
+  - deploy
+  - deploy-staging
+
+# test:
+#   image: "registry.gitlab.vgiscience.org/tud_ifk/miniconda-cidefault:0.8.3"
+#   stage: test
+#   before_script:
+#      # initialize conda shell
+#     - conda init bash
+#     - source ~/.bashrc
+#     # activate default ci_env from registry image
+#     # contains anybadge
+#     - conda activate ci_env
+#     - conda install -yq jupyter-book -c conda-forge
+#   allow_failure: true
+#   script:
+#     - jupyter-book config sphinx .
+#     - jupyter-book build .
+#     - python3 -m http.server 8000 --directory _build/html --bind "::" > server.log 2>&1 &
+#     - BUILD_PID=$!
+#     - sleep 15  # wait until book is built
+#     - /bin/sh tests/link-check.sh
+#     - kill $BUILD_PID  # Stop sphinx-autobuild after testing
+#   artifacts:
+#     when: always
+#     paths:
+#       - rspec.xml
+#     reports:
+#       junit: rspec.xml
+#   only:
+#     - staging
+
+build-staging:
+  image: "registry.gitlab.vgiscience.org/tud_ifk/miniconda-cidefault:0.8.3"
+  stage: build
+  variables:
+      GIT_FETCH_EXTRA_FLAGS: --tags
+      GIT_STRATEGY: clone
+  before_script:
+       # initialize conda shell
+      - conda init bash
+      - source ~/.bashrc
+      # activate default ci_env from registry image
+      # contains anybadge
+      - conda activate ci_env
+  script:
+      # checkout to release branch
+      - git checkout -B "$CI_COMMIT_REF_NAME" "$CI_COMMIT_SHA"
+      # create staging badges with version from latest tag
+      - version_str=$(git describe --tags $(git rev-list --tags --max-count=1))
+      - version_var="$(echo $version_str | cut -c2-)-staging"
+      - echo "Version for badges $version_var"
+      - anybadge -l version --value="${version_var}" --file=version.svg --color=#70A401
+      - anybadge -l pipeline --value="passed (staging)" --file=pipeline.svg --color=#70A401
+      - anybadge -l DOI --value="TBD" --file=doi.svg --color=#1081C1
+      # convert readme to index.html and contributing.md and copy to webroot
+      # use intermediate step to include mermaid conversion
+      - mmdc -p ./.pandoc/puppeteer-config.json -i README.md -o README.md
+      - mmdc -p ./.pandoc/puppeteer-config.json -i CONTRIBUTING.md -o CONTRIBUTING.md
+      - pandoc -v
+      - pandoc --standalone --embed-resource -c readme.css --template .pandoc/readme.html -f gfm -t html README.md -o readme.html
+      - pandoc --standalone --embed-resource -c readme.css --template .pandoc/readme.html -f gfm -t html CONTRIBUTING.md -o contributing.html
+      # patch launch buttons to show Jupyter4NFDI instead of Binder
+      - chmod +x scripts/patch_binder_links.sh
+      - ./scripts/patch_binder_links.sh
+      # create book
+      - jupyter-book config sphinx .
+      - jupyter-book build .
+      # replace version badge with staging path
+      - sed -i -e 's|https://hack.conference.ioer.info/version.svg|https://stag.hack.conference.ioer.info/version.svg|g' _build/html/intro.html
+      # replace link to staging
+      - sed -i -e 's|https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026|https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/tree/staging?ref_type=heads|g' _build/html/intro.html
+      - grep -r 'flavor=xl1nfdi' _build/html || (echo "Binder Patch not applied successfully!" && exit 1)
+      # collect artifacts
+      - mkdir ._site
+      - cp *.svg ._site
+      # copy book files
+      - cp -r _build/html/* ._site/.
+      - cp .pandoc/*.css ._site
+      - cp .pandoc/*.png ._site
+      - cp *.html ._site
+      - cp -r resources/* ._site
+      - mv ._site _site
+  artifacts:
+    name: _site
+    paths:
+      - _site
+  only:
+    - staging
+    
+build:
+  image: "registry.gitlab.vgiscience.org/tud_ifk/miniconda-cidefault:0.8.3"
+  stage: build
+  variables:
+      GIT_FETCH_EXTRA_FLAGS: --tags
+      GIT_STRATEGY: clone
+  before_script:
+       # initialize conda shell
+      - conda init bash
+      - source ~/.bashrc
+      # activate default ci_env from registry image
+      # contains anybadge
+      - conda activate ci_env
+      - conda install jupyter-book -c conda-forge
+  script:
+      # checkout to release branch
+      - git checkout -B "$CI_COMMIT_REF_NAME" "$CI_COMMIT_SHA"
+      - git config --global user.name "semantic-release (via GitlabCI)"
+      - git config --global user.email "semantic-release@gitlab"
+      # create release version
+      - url_host=`git remote get-url origin | sed -e "s/https:\/\/gitlab-ci-token:.*@//g"`
+      - git remote set-url origin "https://gitlab-ci-token:${GL_TOKEN}@${url_host}"
+      - git fetch --unshallow || git fetch --all --tags
+      - semantic-release version
+      - semantic-release publish
+      - git push origin main --follow-tags
+      # create badges with version from latest tag
+      - version_str=$(git describe --tags $(git rev-list --tags --max-count=1))
+      - version_var=$(echo $version_str | cut -c2-)
+      - echo "Version for badges $version_var"
+      - anybadge -l version --value="${version_var}" --file=version.svg --color=#70A401
+      - anybadge -l pipeline --value="passed" --file=pipeline.svg --color=#70A401
+      - anybadge -l DOI --value="TBD" --file=doi.svg --color=#1081C1
+      # convert readme to index.html and contributing.md and copy to webroot
+      # use intermediate step to include mermaid conversion
+      - mmdc -p ./.pandoc/puppeteer-config.json -i README.md -o README.md
+      - mmdc -p ./.pandoc/puppeteer-config.json -i CONTRIBUTING.md -o CONTRIBUTING.md
+      - pandoc --standalone --embed-resource -c readme.css --template .pandoc/readme.html -f gfm -t html README.md -o readme.html
+      - pandoc --standalone --embed-resource -c readme.css --template .pandoc/readme.html -f gfm -t html CONTRIBUTING.md -o contributing.html
+      # patch launch buttons to show Jupyter4NFDI instead of Binder
+      - chmod +x scripts/patch_binder_links.sh
+      - ./scripts/patch_binder_links.sh
+      # create book
+      - jupyter-book config sphinx .
+      - jupyter-book build .
+      # collect artifacts
+      - mkdir ._site
+      - cp *.svg ._site
+      # copy book files
+      - cp -r _build/html/* ._site/.
+      - cp .pandoc/*.css ._site
+      - cp .pandoc/*.png ._site
+      - cp *.html ._site
+      - cp -r resources/* ._site
+      - mv ._site _site
+  artifacts:
+    name: _site
+    paths:
+      - _site
+  only:
+    - main
+
+deploy:
+  stage: deploy
+  image: "registry.gitlab.vgiscience.org/tud_ifk/rsync-ssh-alpine:alpine3.17-r0-v4"
+  before_script:
+  - eval $(ssh-agent -s)
+  - echo "${SSH_PRIVKEY}" | ssh-add -
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+  - rsync -avu -zz --no-perms --omit-dir-times --chown=www-data:www-data --chmod=D775,F664 _site/ "${PRODUCTION_DESTINATION}"/public/ioerconference-hack/
+  only:
+    - main
+
+deploy-staging:
+  stage: deploy
+  image: "registry.gitlab.vgiscience.org/tud_ifk/rsync-ssh-alpine:alpine3.17-r0-v4"
+  before_script:
+  - eval $(ssh-agent -s)
+  - echo "${SSH_PRIVKEY}" | ssh-add -
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\tLogLevel QUIET\n\n" > ~/.ssh/config'
+  script:
+  - rsync -avu -zz --no-perms --omit-dir-times --chown=www-data:www-data --chmod=D775,F664 _site/ "${PRODUCTION_DESTINATION}"/public/ioerconference-hack-staging/
+  only:
+    - staging
