@@ -18,12 +18,7 @@ jupyter:
 
 - [Preface](../intro)
 
-## Part I: Introduction
-
-- [Theory chapters](101_theory_chapters)
-- [Setup & Getting familiar with Jupyter](102_jupyter_notebooks)
-
-## Part II: Workflow
+## Part I: Starter Kit
 
 - [Exploring spatial and biodiversity data](201_example_introduction)
 - [Data Retrieval: GBIF & LAND](202_data_retrieval_gbif)
@@ -31,18 +26,7 @@ jupyter:
 - [Data Analysis & Visualization](204_analysis)
 - [Publishing](205_publish)
 
-## Part III: Reference documentation
-
-- [Accessing Data](301_accessing_data)
-- [File formats](302_file_formats)
-- [Projections](303_projections)
-- [Selecting and filtering](304_selecting_and_filtering)
-- [Creating maps](305_mapping)
-- [Spatial clipping](306_spatial_clipping)
-- [Merging data](307_merging_data)
-- [Spatial overlays](308_spatial_overlays)
-- [Buffering](309_buffering)
-- [Statistics](310_statistics)
+## Part II: Contributions
 
 ## Further Reading
 

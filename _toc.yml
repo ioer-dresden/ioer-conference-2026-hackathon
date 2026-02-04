@@ -28,15 +28,6 @@ parts:
   - file: notebooks/community_index
     title: List of Submitted Hacks
 
-# ---------------------------------------------------------------
-# INSPIRATION & META
-# ---------------------------------------------------------------
-- caption: Inspiration & Examples
-  chapters:
-  - file: notebooks/501_milvus_maps
-    title: Red Kite (Milvus milvus)
-  - file: notebooks/502_geosocialmedia
-    title: Geosocial Patterns
 
 - caption: Project Info
   chapters:
