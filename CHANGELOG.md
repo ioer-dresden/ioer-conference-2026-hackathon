@@ -7,6 +7,29 @@
 
 
  
+## v0.3.4 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Add back missing notebook ([`e2d30c5`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/e2d30c5d3da77e44501b74dc0d744514c2965e41))
+
+
+
+ 
+ 
+### Refactoring
+ 
+
+
+- Update toc ([`b3b84c5`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/b3b84c5daf7e0d9f16f7a9ce7a189d0519e9e6cc))
+
+
+
+ 
+ 
+ 
 ## v0.3.3 (2026-02-04)
  
 ### Bug fixes
