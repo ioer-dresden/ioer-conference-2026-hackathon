@@ -7,6 +7,19 @@
 
 
  
+## v0.1.3 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Dlgs logo on landing page ([`60f6d3f`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/60f6d3f26e3067492e7a6fc8c5641515a03eddde))
+
+
+
+ 
+ 
+ 
 ## v0.1.2 (2026-02-04)
  
 ### Bug fixes
