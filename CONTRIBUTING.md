@@ -29,15 +29,15 @@ This project is a collaborative team effort, and we want to make contributing as
 
 All documents are edited as Jupyter notebooks and can be found in the subfolder `notebooks/`, e.g.:
 
-- [00_toc.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/-/blob/main/notebooks/00_toc.ipynb)
-- [101_theory_chapters.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/-/blob/main/notebooks/101_theory_chapters.ipynb)
-- [102_jupyter_notebooks.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/-/blob/main/notebooks/102_jupyter_notebooks.ipynb)
-- [201_example_introduction.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/-/blob/main/notebooks/201_example_introduction.ipynb)
+- [00_toc.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026-/blob/main/notebooks/00_toc.ipynb)
+- [101_theory_chapters.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026-/blob/main/notebooks/101_theory_chapters.ipynb)
+- [102_jupyter_notebooks.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026-/blob/main/notebooks/102_jupyter_notebooks.ipynb)
+- [201_example_introduction.ipynb](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026-/blob/main/notebooks/201_example_introduction.ipynb)
 
 (heading-target)=
 # 2. Publishing process
 
-Files are stored in [this git repository](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/). When changes are made to the notebook files, an automation is triggered to update the website at https://hack.conference.ioer.info (git branch `main`) and https://stag.hack.conference.ioer.info/ (git branch `staging`).
+Files are stored in [this git repository](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026). When changes are made to the notebook files, an automation is triggered to update the website at https://hack.conference.ioer.info (git branch `main`) and https://stag.hack.conference.ioer.info/ (git branch `staging`).
 
 These two sites help to incrementally improve the training materials:
 - https://stag.hack.conference.ioer.info/ - always up-to-date, see documentation changes immediately. **This page is only visible from the IOER Intranet**
@@ -63,8 +63,8 @@ For IOER-Internal use only: In order to participate, [request access to the Gitl
 ```
 
 1. Use a common Jupyter Server for collaborative editing and follow the steps outlined under [4: Jupyter Collaborative Editing](#jupyter-collaborative-editing).
-2. Edit files directly in [the Gitlab Repository](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/)
-3. Clone [the repository](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/) locally and edit the Jupyter notebook files directly using your preferred environment. Only use this option if you are familiar with git!
+2. Edit files directly in [the Gitlab Repository](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026)
+3. Clone [the repository](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026) locally and edit the Jupyter notebook files directly using your preferred environment. Only use this option if you are familiar with git!
 
 (heading-target)=
 # 4. Jupyter Collaborative Editing
@@ -134,7 +134,7 @@ Click on "Push changes to remote".
 (heading-target)=
 ## 4.6 Wait for the website to update
 
-Head to https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity/-/pipelines and wait until the Continuous Integration pipeline finished updating the website.
+Head to https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026-/pipelines and wait until the Continuous Integration pipeline finished updating the website.
 
 This will take about 1-2 Minutes.
 
