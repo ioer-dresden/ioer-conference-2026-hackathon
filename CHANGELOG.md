@@ -7,6 +7,19 @@
 
 
  
+## v0.2.0 (2026-02-04)
+ 
+### Features
+ 
+
+
+- Cleanup toc ([`36decff`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/36decff70d0d7a093565e74ce3eef767246ec8fa))
+
+
+
+ 
+ 
+ 
 ## v0.1.5 (2026-02-04)
  
 ### Bug fixes
