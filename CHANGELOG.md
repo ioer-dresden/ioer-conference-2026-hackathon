@@ -7,6 +7,29 @@
 
 
  
+## v0.2.2 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Add empty templarte ([`4c0447e`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/4c0447e48dde838807c5cb14b1e13af514299a5c))
+
+
+
+ 
+ 
+### Style
+ 
+
+
+- Change code to strong formatting ([`05b6432`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/05b643290646553f1a156822557503b1cd124c31))
+
+
+
+ 
+ 
+ 
 ## v0.2.1 (2026-02-04)
  
 ### Bug fixes
