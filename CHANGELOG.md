@@ -7,6 +7,19 @@
 
 
  
+## v0.3.1 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Link to conference page ([`70fca16`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/70fca16508a3976402f8887708bcf387dc1d20f4))
+
+
+
+ 
+ 
+ 
 ## v0.3.0 (2026-02-04)
  
 ### Features
