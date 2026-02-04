@@ -7,6 +7,19 @@
 
 
  
+## v0.1.4 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Update header ([`a3cc9f5`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/a3cc9f59dd55affe9e67e9565cde78c27975dd89))
+
+
+
+ 
+ 
+ 
 ## v0.1.3 (2026-02-04)
  
 ### Bug fixes
