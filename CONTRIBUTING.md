@@ -234,7 +234,7 @@ General conventions are:
 (heading-target)=
 ## Check language and spelling (DeepL/Grammarly check)
 
-Words convey meaning, so it is best to use simple and easy to understand sentences. Tools like [Grammarly](https://app.grammarly.com/) or [Linguee DeepL](https://www.deepl.com/) can help with this. Be sure to use American English for training materials.
+Words convey meaning, so it is best to use simple and easy to understand sentences. Tools like [Grammarly](https://app.grammarly.com/) or [Linguee DeepL](https://www.deepl.com/) can help with this. Be sure to use American English for the Hackathon documentation.
 
 ```{figure} resources/linguee.webp
 :name: linguee-grammarly
