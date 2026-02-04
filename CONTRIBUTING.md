@@ -2,7 +2,7 @@
 
 We are open to contributions in any format and we will make sure to harmonize these after submission. However, if you are familiar with Jupyter, you can submit your contributions directly in the `ipynb` format and with the syntax conventions we outline here. 
 
-This project is a collaborative team effort, and we want to make contributing as easy as possible. This page provides a small workthrough for contributing to the [IOER FDZ Geospatial Training Materials](https://hack.conference.ioer.info). Please note that you currently need to request access in order to participate. Please contact the IOER team.
+This project is a collaborative team effort, and we want to make contributing as easy as possible. This page provides a small workthrough for contributing to the [IOER Conference 2026 Hackathon](https://hack.conference.ioer.info). Please note that you currently need to request access in order to participate. Please contact the IOER team.
 
 ![Mountain picture](resources/cover_image.jpg)
 *Made with❤️, Collaboration, and Open Source Software. Picture: 2021 Alexander Dunkel*
