@@ -7,6 +7,19 @@
 
 
  
+## v0.3.2 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Urls ([`dd71065`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/dd710656f879d107d59891b4e92fb03682ba7e16))
+
+
+
+ 
+ 
+ 
 ## v0.3.1 (2026-02-04)
  
 ### Bug fixes
