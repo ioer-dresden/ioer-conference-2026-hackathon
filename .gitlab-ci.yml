@@ -105,7 +105,7 @@ build:
       # activate default ci_env from registry image
       # contains anybadge
       - conda activate ci_env
-      - conda install jupyter-book -c conda-forge
+      # - conda install "jupyter-book<2.0" -c conda-forge
   script:
       # checkout to release branch
       - git checkout -B "$CI_COMMIT_REF_NAME" "$CI_COMMIT_SHA"
