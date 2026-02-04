@@ -7,6 +7,29 @@
 
 
  
+## v0.3.3 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Template wording ([`3ef27f0`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/3ef27f05563568e577967c42db622b74a2cebf1d))
+
+
+
+ 
+ 
+### Refactoring
+ 
+
+
+- Cleanup from previous template ([`f901797`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/f901797aad00406005b792b3c7949a4dbc6b1623))
+
+
+
+ 
+ 
+ 
 ## v0.3.2 (2026-02-04)
  
 ### Bug fixes
