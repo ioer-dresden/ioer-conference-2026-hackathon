@@ -7,6 +7,19 @@
 
 
  
+## v0.3.0 (2026-02-04)
+ 
+### Features
+ 
+
+
+- Update endmatter ([`955c728`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/955c72891e1bda25d81d133b3efd444684ba9d7e))
+
+
+
+ 
+ 
+ 
 ## v0.2.2 (2026-02-04)
  
 ### Bug fixes
