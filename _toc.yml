@@ -18,7 +18,7 @@ parts:
   - file: notebooks/202_data_retrieval_gbif
     title: Accessing Biodiversity Data (GBIF)
   - file: notebooks/201_example_introduction
-    title: Workflow Example: Urban Green
+    title: "Workflow Example: Urban Green"
 
 # ---------------------------------------------------------------
 # PART II: THE CHALLENGE
