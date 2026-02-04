@@ -7,6 +7,19 @@
 
 
  
+## v0.1.2 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Yaml error ([`1a709a5`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/1a709a5e9b4cf88503ba95dfc71e57666bb0983a))
+
+
+
+ 
+ 
+ 
 ## v0.1.1 (2026-02-04)
  
 ### Bug fixes
