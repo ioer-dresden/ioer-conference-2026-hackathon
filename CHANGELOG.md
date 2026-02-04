@@ -7,6 +7,19 @@
 
 
  
+## v0.1.5 (2026-02-04)
+ 
+### Bug fixes
+ 
+
+
+- Move logo to correct position ([`e3852f5`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/e3852f51a7d8900c43b3e8624314a6f64cde80d2))
+
+
+
+ 
+ 
+ 
 ## v0.1.4 (2026-02-04)
  
 ### Bug fixes
