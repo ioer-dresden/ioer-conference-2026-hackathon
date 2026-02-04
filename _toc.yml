@@ -34,7 +34,7 @@ parts:
   - file: BIBLIOGRAPHY
     title: Bibliography
   - file: CONTRIBUTING
-    title: Conventions
+    title: Developers
   - file: notebooks/401_endmatter-thanks
   - file: CHANGELOG
     title: Changelog

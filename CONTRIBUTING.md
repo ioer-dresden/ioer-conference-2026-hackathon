@@ -1,4 +1,4 @@
-# Syntax Conventions
+# Developers: Syntax Conventions
 
 We are open to contributions in any format and we will make sure to harmonize these after submission. However, if you are familiar with Jupyter, you can submit your contributions directly in this format. 
 
