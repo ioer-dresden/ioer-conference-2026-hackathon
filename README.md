@@ -10,6 +10,8 @@ Unlike traditional hackathons, this project is an **asynchronous, collaborative 
 
 All internal collaboration and continuous integration/deployment (CI & CD) takes place in [this Gitlab repository](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/).
 
+For public collaboration, we set up a [mirror on Github](https://github.com/ioer-dresden/ioer-conference-2026-hackathon).
+
 ## TL;DR: How to Contribute
 
 The workflow for participants and maintainers is as follows:
@@ -34,12 +36,12 @@ See the [Contribution Documentation](https://hack.conference.ioer.info/CONTRIBUT
 This infrastructure allows you to focus on the content (Sustainability, Digitalisation, Spatial Analysis) without worrying about web hosting.
 
 *   **Cloud Execution:** You can run the Notebooks directly in your browser via the **Jupyter4NFDI Hub** (link available in the top menu bar of the book).
-*   **Local Execution:** If you prefer working locally, please refer to the instructions for the [Carto-Lab Docker](https://gitlab.vgiscience.de/lbsn/tools/jupyterlab), provided in the [Setup Chapter][1].
+*   **Local Execution:** If you prefer working locally, please refer to the instructions for the IOER FDZ [Carto-Lab Docker](https://cartolab.fdz.ioer.info/), provided in the [Setup Chapter][1].
 *   **Versioning:** This repository is versioned with [python-semantic-release](https://python-semantic-release.readthedocs.io/en/latest/).
 
 For a step-by-step guide on how to make your first Pull Request, see the [Contributing Section](https://hack.conference.ioer.info/CONTRIBUTING.html).
 
 
-[1]: https://hack.conference.ioer.info/notebooks/102_jupyter_notebooks.html#carto-lab-docker
+[1]: https://hack.conference.ioer.info/notebooks/101_jupyter_notebooks.html#carto-lab-docker
 [static-gl-url]: https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026
 [doi-url]: https://tbd
