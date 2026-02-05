@@ -111,7 +111,7 @@ jupyter lab # run jupyterlab
 ```
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 However, from there, Python package management, version conflicts, dependency issues and many other challenges can make it very difficult for beginnings to reproduce the outputs we show here. You have different options that we explain below.
 <!-- #endregion -->
 
@@ -178,11 +178,17 @@ from IPython.display import Markdown as md
 from datetime import date
 
 today = date.today()
-with open('/.version', 'r') as file: app_version = file.read().split("'")[1]
-md(f"Last updated: <kbd>{today.strftime('%b-%d-%Y')}</kbd>, [Carto-Lab Docker](https://gitlab.vgiscience.de/lbsn/tools/jupyterlab) <kbd>Version {app_version}</kbd>")
+
+try:
+    app_version = open('/.version').read().split("'")[1]
+    extra = f', [IOER FDZ Carto-Lab Docker](https://cartolab.fdz.ioer.info/) <kbd>Version {app_version}</kbd>'
+except FileNotFoundError:
+    extra = ''
+
+md(f"Last updated: <kbd>{today.strftime('%b-%d-%Y')}</kbd>{extra}")
 ```
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 `````{admonition} See the Carto-Lab Docker docs for installation instructions
 :class: dropdown, hint
 
@@ -202,7 +208,7 @@ docker-compose pull && docker-compose up -d
 `````
 <!-- #endregion -->
 
-<!-- #region slideshow={"slide_type": ""} editable=true -->
+<!-- #region editable=true slideshow={"slide_type": ""} -->
 ```{admonition} We only guarantee reproducibility with Carto-Lab Docker
 :class: attention
 Due to the wide variety of possible setups, operating systems (Windows, Linux, Mac), software versions and changing environments, we can only guarantee complete reproducibility with the exact Carto-Lab Docker version shown above. You may still be lucky if you use some of the alternatives we show you below.
@@ -243,7 +249,7 @@ git clone --depth 1 https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi
 ``````
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 ### Jupyterlab: Basic key commands 
 
 After these steps, you are ready to go. You can find the individual notebooks of the training materials in the subfolder `notebooks/`.
@@ -265,7 +271,7 @@ You can also install the packages individually:
 2. or install all packages for each notebook into a separate environment (easier, but more work)
 <!-- #endregion -->
 
-<!-- #region slideshow={"slide_type": ""} editable=true -->
+<!-- #region editable=true slideshow={"slide_type": ""} -->
 For **Option 1**, you can start with the [environment.yml](https://gitlab.vgiscience.de/lbsn/tools/jupyterlab/-/blob/master-latest/environment_default.yml?ref_type=heads) from Carto-Lab Docker and install the environment manually with:
 ```bash
 conda env create -f environment.yaml
@@ -284,7 +290,7 @@ For **Option 2**, we we provide a summary of the packages used and the specific 
 Example:
 <!-- #endregion -->
 
-```python slideshow={"slide_type": ""} tags=["remove-input"] editable=true
+```python editable=true tags=["remove-input"] slideshow={"slide_type": ""}
 import sys
 from pathlib import Path
 
@@ -305,11 +311,11 @@ pip install python==3.11.6 dask==2024.12.1 datashader==0.17.0 geopandas==0.14.4 
 ```
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 ## Temporary package installs
 <!-- #endregion -->
 
-<!-- #region slideshow={"slide_type": ""} editable=true -->
+<!-- #region editable=true slideshow={"slide_type": ""} -->
 Sometimes, a default environment exists that already includes many packages. Only some new packages need to be installed for certain notebooks. In these cases, it can be _Ok_ to install packages temporarily directly from within Jupyter. 
 
 ```{admonition} Example notebook
@@ -322,7 +328,7 @@ We do this, for example, for `owslib` in our workflow in [Data Retrieval: IOER M
 You can install packages temporarily by issuing bash commands directly in a code cell with a `!`-prefix.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 ```bash
 !pip install owslib
 ```
@@ -332,7 +338,7 @@ You can install packages temporarily by issuing bash commands directly in a code
 We have written a little helper script that comes with the training materials that also checks if the package is already installed.
 <!-- #endregion -->
 
-```python tags=["remove-input"] editable=true slideshow={"slide_type": ""}
+```python editable=true tags=["remove-input"] slideshow={"slide_type": ""}
 tools.display_file(Path.cwd().parents[0] / 'py' / 'modules' / 'pkginstall.sh')
 ```
 
@@ -348,7 +354,7 @@ print(f"Current Kernel {pyexec}")
 ``````
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 ## How to import Packages and Libraries
 <!-- #endregion -->
 
@@ -382,7 +388,7 @@ If the installation was successful but still the issue persists, it could be due
 
 
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 - Wrong Kernel: Package or Library is not installed in the selected Jupyter kernel.
 
   **Solution:** Switch to the correct kernel via the upper-right menu in Jupyter.
