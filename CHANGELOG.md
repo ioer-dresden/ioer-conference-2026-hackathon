@@ -7,6 +7,53 @@
 
 
  
+## v0.4.4 (2026-02-05)
+ 
+### Bug fixes
+ 
+
+
+- Catch if environment is jupyter4nfdi, not carto-lab ([`1ac95ba`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/1ac95ba0317a8c4bf2d4c12d28c10bf199f4f584))
+
+
+
+ 
+ 
+### Style
+ 
+
+
+- Improve highlight ([`2cc3742`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/2cc37428a2cfaa6b04039c34fefd3122f0a5f874))
+
+
+
+ 
+
+
+- Update header logo to match conference theme ([`3036689`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/3036689fb7224ad8c9a36e787e9853a14a1815da))
+
+
+
+ 
+ 
+### Refactoring
+ 
+
+
+- Replace wording ([`d4127b1`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/d4127b1a9b6de8f764d82e5822724a2c3f655137))
+
+
+
+ 
+
+
+- Minor clarification of submission process ([`ef2a29f`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/ef2a29f7f4fcba4e11b3c43c1b04a53b7166e493))
+
+
+
+ 
+ 
+ 
 ## v0.4.3 (2026-02-05)
  
 ### Bug fixes
