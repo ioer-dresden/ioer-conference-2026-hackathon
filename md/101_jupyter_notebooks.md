@@ -163,7 +163,7 @@ The tradeoff here is that you must install all dependencies before running noteb
 ### Carto-Lab Docker
 
 <!-- #region slideshow={"slide_type": ""} editable=true -->
-To ensure full reproducibility of the training materials, we use a prepared system environment called [Carto-Lab Docker](https://cartolab.theplink.org/).
+To ensure full reproducibility of the training materials, we use a prepared system environment called [Carto-Lab Docker](https://cartolab.fdz.ioer.info/).
 
 Carto-Lab Docker includes
 - Jupyter Lab 
@@ -220,12 +220,12 @@ In general, we recommend to avoid Windows under any circumstances. If you are wo
 ### Clone the training materials
 
 
-In order to use the training materials, the repository must be cloned. Open a terminal and type the following command:
+In order to use the starter kit, the repository must be cloned. Open a terminal and type the following command:
 
 <!-- #region -->
 ```bash
 # create a shallow clone (no git history, just the latest files)
-git clone --depth 1 https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity.git
+git clone --depth 1 https://github.com/ioer-dresden/ioer-conference-2026-hackathon.git
 ```
 <!-- #endregion -->
 
@@ -242,7 +242,7 @@ Afterwards, type:
 ```bash
 cd /home/jovyan/work/
 # create a shallow clone (no git history, just the latest files)
-git clone --depth 1 https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity.git
+git clone --depth 1 https://github.com/ioer-dresden/ioer-conference-2026-hackathon.git
 ```
 
 - `/home/jovyan/work/` is the path to the default home folder in Jupyter. The home folder is the folder you see in the explorer on the left side when you are logged in to Jupyter.
