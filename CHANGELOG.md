@@ -7,6 +7,19 @@
 
 
  
+## v0.4.2 (2026-02-05)
+ 
+### Bug fixes
+ 
+
+
+- Update preface toc ([`c890ff4`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/c890ff49012711d6195d5ed9ef71046ce3f42115))
+
+
+
+ 
+ 
+ 
 ## v0.4.1 (2026-02-05)
  
 ### Bug fixes
