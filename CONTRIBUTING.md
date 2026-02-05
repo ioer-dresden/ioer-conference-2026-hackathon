@@ -365,6 +365,7 @@ Add `hide-output` to a cell's metadata to hide its output with a drop-down link.
 ```
 
 # 8. Citations, references
+(content:references:citations)=
 
 Citations are managed with [sphinxcontrib-bibtex](https://github.com/mcmtroffaes/sphinxcontrib-bibtex). See the Jupyter Book docs [here](https://jupyterbook.org/en/stable/content/citations.html).
 

@@ -100,7 +100,7 @@ The [Python Standard Library Documentation](https://docs.python.org/3/library/in
 ```
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 Installing JupyterLab is relatively easy:
 <!-- #endregion -->
 
@@ -162,7 +162,7 @@ The tradeoff here is that you must install all dependencies before running noteb
 
 ### Carto-Lab Docker
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 To ensure full reproducibility of the training materials, we use a prepared system environment called [Carto-Lab Docker](https://cartolab.theplink.org/).
 
 Carto-Lab Docker includes
@@ -202,7 +202,7 @@ docker-compose pull && docker-compose up -d
 `````
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 ```{admonition} We only guarantee reproducibility with Carto-Lab Docker
 :class: attention
 Due to the wide variety of possible setups, operating systems (Windows, Linux, Mac), software versions and changing environments, we can only guarantee complete reproducibility with the exact Carto-Lab Docker version shown above. You may still be lucky if you use some of the alternatives we show you below.
@@ -223,7 +223,7 @@ git clone --depth 1 https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi
 ```
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 ``````{admonition} Use the Jupyter Terminal
 :class: hint
 You can use the terminal that is provided by Jupyter. At your Jupyter Dashboard, click the following Icon:
@@ -265,7 +265,7 @@ You can also install the packages individually:
 2. or install all packages for each notebook into a separate environment (easier, but more work)
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 For **Option 1**, you can start with the [environment.yml](https://gitlab.vgiscience.de/lbsn/tools/jupyterlab/-/blob/master-latest/environment_default.yml?ref_type=heads) from Carto-Lab Docker and install the environment manually with:
 ```bash
 conda env create -f environment.yaml
@@ -284,7 +284,7 @@ For **Option 2**, we we provide a summary of the packages used and the specific 
 Example:
 <!-- #endregion -->
 
-```python editable=true slideshow={"slide_type": ""} tags=["remove-input"]
+```python slideshow={"slide_type": ""} tags=["remove-input"] editable=true
 import sys
 from pathlib import Path
 
@@ -309,7 +309,7 @@ pip install python==3.11.6 dask==2024.12.1 datashader==0.17.0 geopandas==0.14.4 
 ## Temporary package installs
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 Sometimes, a default environment exists that already includes many packages. Only some new packages need to be installed for certain notebooks. In these cases, it can be _Ok_ to install packages temporarily directly from within Jupyter. 
 
 ```{admonition} Example notebook
@@ -318,7 +318,7 @@ We do this, for example, for `owslib` in our workflow in [Data Retrieval: IOER M
 ```
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 You can install packages temporarily by issuing bash commands directly in a code cell with a `!`-prefix.
 <!-- #endregion -->
 
@@ -328,11 +328,11 @@ You can install packages temporarily by issuing bash commands directly in a code
 ```
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region slideshow={"slide_type": ""} editable=true -->
 We have written a little helper script that comes with the training materials that also checks if the package is already installed.
 <!-- #endregion -->
 
-```python editable=true slideshow={"slide_type": ""} tags=["remove-input"]
+```python tags=["remove-input"] editable=true slideshow={"slide_type": ""}
 tools.display_file(Path.cwd().parents[0] / 'py' / 'modules' / 'pkginstall.sh')
 ```
 

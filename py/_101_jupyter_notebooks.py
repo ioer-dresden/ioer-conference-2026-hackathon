@@ -52,16 +52,18 @@
 #
 # Learn more about using [Markdown](https://www.markdownguide.org/getting-started/).
 # `````
-
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+#
+# <!-- #region editable=true slideshow={"slide_type": ""} -->
 # ## How to run the training materials interactively?
-
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# <!-- #endregion -->
+#
+# <!-- #region editable=true slideshow={"slide_type": ""} -->
 # In Python, "dependencies" typically refer to **packages** and **libraries** that the code needs to work properly. Packages and libraries are collections of pre-written code that help you perform various tasks more easily. Each package or library is designed for a specific purpose, such as visualising data.
 #
 # To successfully run the workflows in these notebooks, you must have the required packages or libraries installed. The first software that is needed is **JupyterLab**.
-
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# <!-- #endregion -->
+#
+# <!-- #region editable=true slideshow={"slide_type": ""} -->
 # ```{admonition} Not familiar with Python packages or libraries?
 # :class: dropdown, seealso
 # The [Python Standard Library Documentation](https://docs.python.org/3/library/index.html) and the lists below provide selected standard library modules as well as third-party packages and libraries.
@@ -96,8 +98,9 @@
 # </details>
 #
 # ```
+# <!-- #endregion -->
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # Installing JupyterLab is relatively easy:
 
 # %% [markdown]
@@ -157,7 +160,7 @@
 # %% [markdown]
 # ### Carto-Lab Docker
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # To ensure full reproducibility of the training materials, we use a prepared system environment called [Carto-Lab Docker](https://cartolab.theplink.org/).
 #
 # Carto-Lab Docker includes
@@ -194,7 +197,7 @@ md(f"Last updated: <kbd>{today.strftime('%b-%d-%Y')}</kbd>, [Carto-Lab Docker](h
 # ```
 # `````
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # ```{admonition} We only guarantee reproducibility with Carto-Lab Docker
 # :class: attention
 # Due to the wide variety of possible setups, operating systems (Windows, Linux, Mac), software versions and changing environments, we can only guarantee complete reproducibility with the exact Carto-Lab Docker version shown above. You may still be lucky if you use some of the alternatives we show you below.
@@ -214,7 +217,7 @@ md(f"Last updated: <kbd>{today.strftime('%b-%d-%Y')}</kbd>, [Carto-Lab Docker](h
 # git clone --depth 1 https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/jupyter-book-nfdi4biodiversity.git
 # ```
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # ``````{admonition} Use the Jupyter Terminal
 # :class: hint
 # You can use the terminal that is provided by Jupyter. At your Jupyter Dashboard, click the following Icon:
@@ -253,7 +256,7 @@ md(f"Last updated: <kbd>{today.strftime('%b-%d-%Y')}</kbd>, [Carto-Lab Docker](h
 # 1. Install all packages for all notebooks in a single environment (harder, but less work)
 # 2. or install all packages for each notebook into a separate environment (easier, but more work)
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # For **Option 1**, you can start with the [environment.yml](https://gitlab.vgiscience.de/lbsn/tools/jupyterlab/-/blob/master-latest/environment_default.yml?ref_type=heads) from Carto-Lab Docker and install the environment manually with:
 # ```bash
 # conda env create -f environment.yaml
@@ -270,7 +273,7 @@ md(f"Last updated: <kbd>{today.strftime('%b-%d-%Y')}</kbd>, [Carto-Lab Docker](h
 #
 # Example:
 
-# %% editable=true slideshow={"slide_type": ""} tags=["remove-input"]
+# %% slideshow={"slide_type": ""} tags=["remove-input"] editable=true
 import sys
 from pathlib import Path
 
@@ -292,7 +295,7 @@ tools.package_report(root_packages)
 # %% [markdown] editable=true slideshow={"slide_type": ""}
 # ## Temporary package installs
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # Sometimes, a default environment exists that already includes many packages. Only some new packages need to be installed for certain notebooks. In these cases, it can be _Ok_ to install packages temporarily directly from within Jupyter. 
 #
 # ```{admonition} Example notebook
@@ -300,7 +303,7 @@ tools.package_report(root_packages)
 # We do this, for example, for `owslib` in our workflow in [Data Retrieval: IOER Monitor](203_data_retrieval_monitor): The Carto-Lab Docker environment does not contain this package and we only need it once to query the IOER Monitor API.
 # ```
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # You can install packages temporarily by issuing bash commands directly in a code cell with a `!`-prefix.
 
 # %% [markdown] editable=true slideshow={"slide_type": ""}
@@ -308,10 +311,10 @@ tools.package_report(root_packages)
 # !pip install owslib
 # ```
 
-# %% [markdown] editable=true slideshow={"slide_type": ""}
+# %% [markdown] slideshow={"slide_type": ""} editable=true
 # We have written a little helper script that comes with the training materials that also checks if the package is already installed.
 
-# %% editable=true slideshow={"slide_type": ""} tags=["remove-input"]
+# %% tags=["remove-input"] editable=true slideshow={"slide_type": ""}
 tools.display_file(Path.cwd().parents[0] / 'py' / 'modules' / 'pkginstall.sh')
 
 # %% [markdown] editable=true slideshow={"slide_type": ""}
