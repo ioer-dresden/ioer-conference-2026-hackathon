@@ -20,26 +20,20 @@ jupyter:
 
 ## Part I: Starter Kit
 
-- [Exploring spatial and biodiversity data](201_example_introduction)
-- [Data Retrieval: GBIF & LAND](202_data_retrieval_gbif)
-- [Data Retrieval: IOER Monitor](203_data_retrieval_monitor)
-- [Data Analysis & Visualization](204_analysis)
-- [Publishing](205_publish)
+- [Setup & Computing Environment](201_example_introduction)
+- [Accessing IOER Monitor Data (API)](202_data_retrieval_gbif)
+- [Accessing Biodiversity Data (GBIF)](203_data_retrieval_monitor)
+- [More Jump-Start Datasets](204_analysis)
 
 ## Part II: Contributions
 
-## Further Reading
+- [List of Submitted Hacks](notebooks/104_more)
 
-- [Thank You](401_endmatter-thanks)
+## Project Info
 
-## Datasets
-
-- [Maps for Milvus milvus](10_milvus_maps)
-- [Exploration of geosocial patterns (Germany)](11_geosocialmedia)
-
-## Developers
-
-- [Contributing](../CONTRIBUTING)
+- [Bibliography](../BIBLIOGRAPHY)
+- [Developers](../CONTRIBUTING)
+- [Thank You!](401_endmatter-thanks)
 - [Changelog](../CHANGELOG)
 <!-- #endregion -->
 
