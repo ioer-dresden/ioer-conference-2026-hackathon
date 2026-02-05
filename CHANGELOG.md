@@ -7,6 +7,43 @@
 
 
  
+## v0.4.0 (2026-02-05)
+ 
+### Features
+ 
+
+
+- Rename notebooks, cleanup, add jupytext conversion (md, py, ipynb) for better git integration ([`d1121bd`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/d1121bd2e208b3da6d5d287ba736af3b8a987f3f))
+
+
+
+ 
+ 
+### Refactoring
+ 
+
+
+- Minor rephrase sentence ([`1a7cab7`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/1a7cab71879017a802d3792cbe95df0c1e9cafae))
+
+
+
+ 
+
+
+- Minor clarity update ([`73b3653`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/73b3653352a0750754aceb1ad15ca1e60f99a43f))
+
+
+
+ 
+
+
+- Minor rephrasing of landing page ([`a9bfeee`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/a9bfeeeb4c0c89bd1cd0d55da84e69f2929f9e65))
+
+
+
+ 
+ 
+ 
 ## v0.3.4 (2026-02-04)
  
 ### Bug fixes
