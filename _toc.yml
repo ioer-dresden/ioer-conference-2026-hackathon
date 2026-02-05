@@ -11,14 +11,14 @@ parts:
 # ---------------------------------------------------------------
 - caption: Part I - Starter Kit
   chapters:
-  - file: notebooks/102_jupyter_notebooks
+  - file: notebooks/101_jupyter_notebooks
     title: Setup & Computing Environment
-  - file: notebooks/203_data_retrieval_monitor
+  - file: notebooks/102_data_retrieval_monitor
     title: Accessing IOER Monitor Data (API)
-  - file: notebooks/202_data_retrieval_gbif
+  - file: notebooks/103_data_retrieval_gbif
     title: Accessing Biodiversity Data (GBIF)
-  - file: notebooks/201_example_introduction
-    title: "Workflow Example: Urban Green"
+  - file: notebooks/104_more
+    title: "More Jump-Start Datasets"
 
 # PART III: RESULTS
 # This section grows as people merge their PRs
