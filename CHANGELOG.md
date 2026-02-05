@@ -7,6 +7,19 @@
 
 
  
+## v0.4.1 (2026-02-05)
+ 
+### Bug fixes
+ 
+
+
+- Update references note, add references.bib to public site for direct download ([`4ebb1a1`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/4ebb1a161b15b88d67c3b7b6266cc99eb5e96cff))
+
+
+
+ 
+ 
+ 
 ## v0.4.0 (2026-02-05)
  
 ### Features
