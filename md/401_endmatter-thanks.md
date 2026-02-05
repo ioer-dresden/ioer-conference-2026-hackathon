@@ -47,14 +47,14 @@ E-Mail: fdz@ioer.de
 
 ### Contact persons
 
-Prof. Dr.-Ing. Martin Behnisch
-m.behnisch@ioer.de
-phone +49 351 4679 205
+Prof. Dr.-Ing. Martin Behnisch  
+m.behnisch@ioer.de  
+phone +49 351 4679 205  
 
-M.A. Saskia Hofmann  (Conference Organisation Team)
+M.A. Saskia Hofmann  (Conference Organisation Team)  
 s.hofmann@ioer.de
 
-Dr. Alexander Dunkel  (Technical Setup)
+Dr.-Ing. Alexander Dunkel  (Technical Setup)  
 a.dunkel@ioer.de  
 phone +49 351 4679 148
 
