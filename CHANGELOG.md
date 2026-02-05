@@ -7,6 +7,19 @@
 
 
  
+## v0.4.3 (2026-02-05)
+ 
+### Bug fixes
+ 
+
+
+- Update public github source url ([`b597c18`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/b597c1838fccbe68064112599175794f322152ed))
+
+
+
+ 
+ 
+ 
 ## v0.4.2 (2026-02-05)
  
 ### Bug fixes
