@@ -7,6 +7,49 @@
 
 
  
+## v0.4.5 (2026-02-06)
+ 
+### Bug fixes
+ 
+
+
+- Url to jupyter4nfdi ([`0c163c9`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/0c163c90546dd1a0a4cc7db7bcf4a5a74585dc85))
+
+
+
+ 
+ 
+### Style
+ 
+
+
+- Fix missing indentation ([`896859c`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/896859c1e3ff1111a7ae250981501c708b1e4feb))
+
+
+
+ 
+ 
+### Documentation
+ 
+
+
+- Update readme ([`58b3ad2`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/58b3ad2d6b0a279f8608dd705f408d1ee59a0eeb))
+
+
+
+ 
+ 
+### Refactoring
+ 
+
+
+- Update urls ([`7766273`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/776627359977e4ca1af6728a6ebd28e49dc5875d))
+
+
+
+ 
+ 
+ 
 ## v0.4.4 (2026-02-05)
  
 ### Bug fixes
