@@ -262,7 +262,7 @@ Please write commit messages following the [Conventional Commits Specification](
 ---
 
 (dev:formatting)=
-(content:references:formattingconventions)
+(content:references:formattingconventions)=
 # 7. Formatting conventions
 
 - **Concise sentences:** Aim for 10–15 words per sentence.
