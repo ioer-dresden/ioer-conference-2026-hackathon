@@ -1,0 +1,258 @@
+{
+  "mapstyle": "positron",
+  "location": {
+    "center": [
+      10.45,
+      51.15
+    ],
+    "zoom": 3.5,
+    "bearing": 0,
+    "pitch": 0
+  },
+  "cover": {
+    "title": "You know us already",
+    "subtitle": "<i>Herons, and the space a city leaves them</i>",
+    "image": "assets/silhouette.png"
+  },
+  "intro": [
+    {
+      "description": "Herons have been watched, painted, and photographed for centuries. They still stand where they always have: near water, and increasingly, inside cities. Scroll down to find them on the map.",
+      "image": "assets/heron_illustration.jpg",
+      "alignment": "fully",
+      "class": "hook",
+      "location": {
+        "center": [
+          10.45,
+          51.15
+        ],
+        "zoom": 5,
+        "bearing": 0,
+        "pitch": 30
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Globally distributed",
+      "description": "Herons are recorded on every continent except Antarctica, wherever there is water to hunt in.\nThe empty places on this map are not empty. They are the places nobody watched. Even there, the scattered records follow a river or a coast.\n",
+      "alignment": "lefty",
+      "location": {
+        "center": [
+          10.0,
+          20.0
+        ],
+        "zoom": 1.0,
+        "bearing": 0,
+        "pitch": 0
+      },
+      "wmslayer": "https://api.gbif.org/v2/map/occurrence/density/{z}/{x}/{y}@2x.png?style=green-noborder.poly&bin=hex&hexPerTile=70&hasCoordinate=true&hasGeospatialIssue=false&occurrenceStatus=PRESENT&srs=EPSG:3857&taxonKey=3685"
+    },
+    {
+      "title": "Down to Germany",
+      "description": "Germany records the heron family in large numbers. Nine species have been seen here, and one of them turns up almost everywhere there is water.",
+      "alignment": "lefty",
+      "location": {
+        "center": [
+          7.16309,
+          51.20688
+        ],
+        "zoom": 5.5,
+        "bearing": 0,
+        "pitch": 0
+      },
+      "wmslayer": "https://api.gbif.org/v2/map/occurrence/density/{z}/{x}/{y}@2x.png?style=green-noborder.poly&bin=hex&hexPerTile=70&hasCoordinate=true&hasGeospatialIssue=false&occurrenceStatus=PRESENT&srs=EPSG:3857&taxonKey=3685&country=DE"
+    },
+    {
+      "title": "Where each one goes",
+      "description": "These are the seven species most often observed in Germany. <br> Grey herons are recorded almost everywhere there is water. Night herons keep to a few places along the southern rivers, and great egrets to the north and east.",
+      "alignment": "righty",
+      "location": {
+        "center": [
+          10.45,
+          51.15
+        ],
+        "zoom": 5.8,
+        "bearing": 0,
+        "pitch": 0
+      },
+      "image": "assets/species_records.png",
+      "data": {
+        "file": "assets/heron_points.geojson",
+        "circlePaint": {
+          "circle-radius": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "zoom"
+            ],
+            5,
+            2.2,
+            10,
+            5
+          ],
+          "circle-color": [
+            "match",
+            [
+              "get",
+              "sp"
+            ],
+            "Grey Heron",
+            "#6c97ba",
+            "Black-crowned Night Heron",
+            "#e9ed64",
+            "Purple Heron",
+            "#ef7851",
+            "#b9b7b0"
+          ],
+          "circle-opacity": 0.85,
+          "circle-stroke-width": 0.6,
+          "circle-stroke-color": "#00000033"
+        },
+        "sourceId": "heron_dots"
+      }
+    },
+    {
+      "title": "Not every heron nests in town",
+      "description": "Now the urban association. The dark clusters are cities, where birdwatchers and herons pile up together. The pale dots scattered between them do something else: they follow the water. Zoom in and you can trace a river by the herons standing along it.",
+      "alignment": "righty",
+      "location": {
+        "center": [
+          12.24,
+          49.11
+        ],
+        "zoom": 7,
+        "bearing": 0,
+        "pitch": 0
+      },
+      "image": "assets/species_urbanity.png",
+      "data": {
+        "file": "assets/heron_points.geojson",
+        "circlePaint": {
+          "circle-radius": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "zoom"
+            ],
+            5,
+            2.2,
+            10,
+            5
+          ],
+          "circle-color": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "bu"
+            ],
+            0,
+            "#f6ded5",
+            5,
+            "#f2b49b",
+            10,
+            "#ef7851",
+            25,
+            "#c1462a",
+            50,
+            "#7d2413"
+          ],
+          "circle-opacity": 0.85,
+          "circle-stroke-width": 0.6,
+          "circle-stroke-color": "#00000033"
+        },
+        "id": "heron_builtup",
+        "sourceId": "heron_dots"
+      }
+    },
+    {
+      "title": "Which trees offer a home",
+      "description": "Grey herons can find room right next to us. Tall, wide urban trees give them somewhere to build, and the water nearby gives them somewhere to feed. Distance to built-up area, surprisingly, does not count against them. So let's zoom in on a neighbourhood near Nymphenburg. The larger and darker a point, the better that tree would hold a nest.",
+      "alignment": "lefty",
+      "location": {
+        "center": [
+          11.48107,
+          48.1579
+        ],
+        "zoom": 17,
+        "bearing": 0,
+        "pitch": 0
+      },
+      "data": {
+        "file": "assets/hsi_trees.geojson",
+        "circlePaint": {
+          "circle-radius": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "zoom"
+            ],
+            14,
+            [
+              "interpolate",
+              [
+                "linear"
+              ],
+              [
+                "get",
+                "hsi"
+              ],
+              0,
+              1.5,
+              1,
+              4
+            ],
+            17,
+            [
+              "interpolate",
+              [
+                "linear"
+              ],
+              [
+                "get",
+                "hsi"
+              ],
+              0,
+              3,
+              1,
+              10
+            ]
+          ],
+          "circle-color": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "hsi"
+            ],
+            0,
+            "#cfccc4",
+            0.01,
+            "#cde0c4",
+            0.35,
+            "#9cc389",
+            0.7,
+            "#5f9a56",
+            1.0,
+            "#2f6b34"
+          ],
+          "circle-opacity": 0.85,
+          "circle-stroke-width": 0.5,
+          "circle-stroke-color": "#00000033"
+        },
+        "id": "hsi_trees"
+      }
+    }
+  ],
+  "footer": "<b>Data</b><br>Occurrences from <a href='https://www.gbif.org'>GBIF</a>.<br>Built-up area from <a href='https://monitor.ioer.de'>IOER Monitor</a>, indicator S12RG (2025), 500 m raster.<br>Water bodies from IOER Monitor, indicator F11RG (2025), 100 m raster.<br>Tree models: Muenzinger, Markus (2025), <a href='https://doi.org/10.71830/NDTUDB'>LiDAR-Based Tree Models for Munich, Germany (2012)</a>, ioerDATA, V1.<br><br><b>Images</b><br>The illustration and the silhouettes are derived from Warnicke, John G. (after Alexander Wilson), <a href='https://www.nga.gov/artworks/73647-green-heron-night-heron-young-heron-and-great-white-heron'><i>Green Heron, Night Heron, Young Heron, and Great White Heron</i></a>, 1808-1814, National Gallery of Art, Washington, D.C."
+}

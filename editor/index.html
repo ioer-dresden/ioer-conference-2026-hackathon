@@ -1,64 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HaCLAthon Collaborative Editor</title>
-    <!-- Map the config since we are in /editor/ -->
-    <link rel="cms-config-url" type="text/yaml" href="config.yml" />
-    
-    <style>
-      /* Layout to keep footer at the bottom */
-      body {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        font-family: sans-serif;
-      }
-      
-      /* The CMS container fills all available space */
-      #nc-root {
-        flex: 1;
-      }
 
-      /* Simple footer styling */
-      footer {
-        background-color: #ffffff;
-        border-top: 1px solid #e1e4e8;
-        padding: 15px 0;
-        z-index: 100; /* Ensure it stays above CMS background elements */
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HaCLAthon Collaborative Editor</title>
+  <!-- Map the config since we are in /editor/ -->
+  <link rel="cms-config-url" type="text/yaml" href="config.yml" />
 
-      footer a {
-        color: #555;
-        text-decoration: none;
-        font-size: 14px;
-      }
+  <style>
+    /* Layout to keep footer at the bottom */
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: sans-serif;
+    }
 
-      footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    /* The CMS container fills all available space */
+    #nc-root {
+      flex: 1;
+    }
 
-    <!-- Important: Load script with 'defer' so it finds the #nc-root div -->
-    <script defer src="decap-cms.js"></script>
-  </head>
-  <body>
-    <!-- Decap CMS will mount here -->
-    <div id="nc-root"></div>
+    /* Simple footer styling */
+    footer {
+      background-color: #ffffff;
+      border-top: 1px solid #e1e4e8;
+      padding: 15px 0;
+      z-index: 100;
+      /* Ensure it stays above CMS background elements */
+    }
 
-    <!-- Your custom footer -->
-    <footer style="width:100%; text-align:right;">
-        <a href="https://www.ioer-fdz.de/">
-            <img alt="IOER-FDZ-Logo" src="https://hack.conference.ioer.info/_static/images/FDZ-Logo_DE_RGB-blk_bg-tra_mgn-full_h200px_web.svg" style="width:256px; margin-right:10px;">
-        </a>
-        <div class="impressum" style="margin-right: 50px; padding-bottom: 10px;">
-            <a href="https://www.ioer.de/impressum" target="_blank">Impressum</a> |
-            <a href="https://www.ioer.de/datenschutz" target="_blank">Datenschutz</a> |
-            <a href="https://www.ioer.de/barrierefreiheit" target="_blank">Barrierefreiheit</a> |
-            <a href="https://hack.conference.ioer.info/legal_notice.html" target="_blank">HaCLAthon Privacy Notice</a>
-        </div>
-    </footer>
-  </body>
+    footer a {
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ==========================================================================
+     Decap CMS: Publish-Button & Dropdown komplett ausblenden
+     ========================================================================== */
+
+    /* 1. Den gesamten Publish-Button in der Leiste oben verstecken (ist ein <span role="button">) */
+    [class*="PublishButton"],
+    span[class*="PublishButton"],
+    button[class*="PublishButton"],
+    .e1d2l9mo5 {
+      display: none !important;
+    }
+
+    /* 2. Alle evtl. noch aufpoppenden Publish-Dropdown-Items verstecken */
+    [class*="PublishDropDownItem"],
+    div[class*="PublishDropDownItem"] {
+      display: none !important;
+    }
+
+    /* 3. Optional: Auf dem Kanban/Workflow-Board die 'Ready'-Spalte verstecken */
+    [class*="WorkflowList"]:last-child,
+    [data-testid="column-ready"] {
+      display: none !important;
+    }
+  </style>
+
+  <!-- Important: Load script with 'defer' so it finds the #nc-root div -->
+  <script defer src="decap-cms.js"></script>
+</head>
+
+<body>
+  <!-- Decap CMS will mount here -->
+  <div id="nc-root"></div>
+
+  <!-- Your custom footer -->
+  <footer style="width:100%; text-align:right;">
+    <a href="https://www.ioer-fdz.de/">
+      <img alt="IOER-FDZ-Logo"
+        src="https://hack.conference.ioer.info/_static/images/FDZ-Logo_DE_RGB-blk_bg-tra_mgn-full_h200px_web.svg"
+        style="width:256px; margin-right:10px;">
+    </a>
+    <div class="impressum" style="margin-right: 50px; padding-bottom: 10px;">
+      <a href="https://www.ioer.de/impressum" target="_blank">Impressum</a> |
+      <a href="https://www.ioer.de/datenschutz" target="_blank">Datenschutz</a> |
+      <a href="https://www.ioer.de/barrierefreiheit" target="_blank">Barrierefreiheit</a> |
+      <a href="https://hack.conference.ioer.info/legal_notice.html" target="_blank">HaCLAthon Privacy Notice</a>
+    </div>
+  </footer>
+</body>
+
 </html>

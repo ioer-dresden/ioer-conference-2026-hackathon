@@ -35,12 +35,18 @@ parts:
     title: "201: Digital Landscape Traces"
   - file: notebooks/202_settlement_delineation_ibtool.ipynb
     title: "202: Settlement Delineation with IBTool"
-  - file: notebooks/203_footprints_to_building_stock_insights
+  - file: md/203_footprints_to_building_stock_insights
     title: "203: From Footprints to Building Stock Insights"
     sections:
-      - file: notebooks/203a_pipeline_details
-      - file: notebooks/203b_methodology
-      
+      - file: notebooks/203a_introduction
+        title: "1. The Data Up Close"
+      - file: notebooks/203b_analysis
+        title: "2. Analyzing Building Stock Patterns"
+      - file: notebooks/203c_pipeline_documentation
+        title: "3. Building the Analytical Foundation"
+  - file: notebooks/204_ToStoryMap_heronUrban
+    title: "204: A Story Map about Herons"
+
 # ---------------------------------------------------------------
 # PROJECT INFO
 # ---------------------------------------------------------------
@@ -50,6 +56,8 @@ parts:
     title: Bibliography
   - file: DEVELOPERS
     title: Developers
+  - file: CONTRIBUTORS
+    title: Authors & Contributors
   - file: notebooks/401_endmatter-thanks
     title: Thank You!
   - file: CHANGELOG

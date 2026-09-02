@@ -7,6 +7,86 @@
 
 
  
+## v0.17.1 (2026-08-27)
+ 
+### Bug fixes
+ 
+
+
+- Add missing cross-link anchor ([`30d144b`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/30d144b5c661ec4a9be2c02d9b928b47358f4af8))
+
+
+
+ 
+ 
+### Chores
+ 
+
+
+- Remove publish & ready status buttons in cms ([`064fc88`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/064fc88341b42185d358480916e934fc27deebe1))
+
+
+
+ 
+
+
+- Remove publish & ready status buttons in cms ([`0d0ddc3`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/0d0ddc3aa2f6590daa18910acb5f028163d96040))
+
+
+
+ 
+ 
+### Style
+ 
+
+
+- Fix formatting headers ([`96c87fa`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/96c87fa76ae88d40c79d977eb7e7db78fa04c068))
+
+
+
+ 
+ 
+### Documentation
+ 
+
+
+- Add images to writer workflow ([`cee8b76`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/cee8b763dffeb7aae8f7b87bc33829b5ed638ffa))
+
+
+
+ 
+
+
+- Add github pr workflow ([`28a5b6f`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/28a5b6fabb7b43846cd4374f4cf3d234ec986b9f))
+
+
+
+ 
+ 
+ 
+## v0.17.0 (2026-08-27)
+ 
+### Features
+ 
+
+
+- Add sujit/sukando abstract ([`44e60f2`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/44e60f2f61de2170d0faa2c73fa63cafd0c8d820))
+
+
+
+ 
+ 
+### Refactoring
+ 
+
+
+- Move starter kit to background; increase visibility of contributions ([`c916e6e`](https://gitlab.hrz.tu-chemnitz.de/ioer/fdz/training/hackathon-ioer-conference-2026/-/commit/c916e6e6b1faf063956c4a36700387d141cd529b))
+
+
+
+ 
+ 
+ 
 ## v0.16.1 (2026-08-24)
  
 ### Bug fixes

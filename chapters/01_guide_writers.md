@@ -33,21 +33,42 @@ Sign-in through our Github integration.
 ```
 
 ## Step 3: Editorial Workflow
+
 Your dashboard shows a Kanban board: **Drafts**, **In Review**, and **Ready**.
 * Click **"New Book Chapter"** to start fresh.
 * Click an existing chapter name to edit it.
 
+```{figure} ../resources/workflow.webp
+:name: Sveltia/Decap Workflow Screen
+:figclass: fig-no-shadow
+Stages of content contribution.
+```
+
 ## Step 4: Writing and Formatting
+
 Use the formatting toolbar (Bold, Italic, Lists) or type Markdown directly.
 
 **Adding Images:**
 Click the `+` icon in the toolbar and select "Image". The system automatically uploads your image to our `resources/` folder and inserts it into your text.
 
+```{figure} ../resources/workflow2.webp
+:name: Sveltia/Decap Edit Screen
+:figclass: fig-no-shadow
+Edit text in the editor.
+```
+
 ## Step 5: Submitting for Review
+
 When you are ready:
 1. Click **Save**.
 2. Change the status from **"Draft"** to **"In Review"**.
 Our curation team will review, format, and publish your chapter to the live website at https://hack.conference.ioer.info.
+
+```{figure} ../resources/2026-08-27_PR_sujit.webp
+:name: Github Pull Request
+:figclass: fig-no-shadow
+Your contribution will be available as a Pull Request in Github and will be merged by the HaCLAthon team.
+```
 
 ## Step 6: Iterate
 Publish often! The HaCLAthon thrives on live collaboration. We welcome incremental contributions. Once we merge your changes, you can reopen the editor and continue right where you left off.
