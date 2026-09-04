@@ -44,6 +44,8 @@ parts:
         title: "2. Analyzing Building Stock Patterns"
       - file: notebooks/203c_pipeline_documentation
         title: "3. Building the Analytical Foundation"
+  - file: notebooks/204_ToStoryMap_heronUrban
+    title: "204: A Story Map about Herons"
 
 # ---------------------------------------------------------------
 # PROJECT INFO

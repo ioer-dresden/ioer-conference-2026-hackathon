@@ -90,6 +90,11 @@ build:
       - cp -r resources/* ._site
       - cp references.bib ._site
       - cp -r editor ._site/
+      # pre-compress the story map's text assets: geojson/js/css/html/json
+      # gzip -k keeps the originals, so the site still works if the web
+      # server has no gzip_static and serves the plain files instead
+      - find ._site/storymap -type f \( -name '*.geojson' -o -name '*.js' -o -name '*.css' -o -name '*.html' -o -name '*.json' \) -exec gzip -9 -k -f {} +
+      - du -sh ._site/storymap
       - mv ._site _site
   artifacts:
     name: _site
