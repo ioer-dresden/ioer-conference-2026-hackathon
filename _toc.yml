@@ -46,7 +46,8 @@ parts:
         title: "3. Building the Analytical Foundation"
   - file: notebooks/204_ToStoryMap_heronUrban
     title: "204: A Story Map about Herons"
-
+  - file: notebooks/205_urban_green
+    title: "205: Urban Green Cooling Benefits"
 # ---------------------------------------------------------------
 # PROJECT INFO
 # ---------------------------------------------------------------

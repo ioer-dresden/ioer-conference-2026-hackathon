@@ -45,15 +45,17 @@ We follow the open-science principles of the **CRediT (Contributor Roles Taxonom
 * **Oliver Harig**  
   *Chapter:* [202: Settlement Delineation with IBTool](notebooks/202_settlement_delineation_ibtool)  
   *Roles:* QGIS Plugin Development, Workflow Tutorial, Settlement Monitoring Methodology.
-* **Markus Münzinger & Dr. Martin Behnisch**  
+* **Markus Münzinger & Martin Behnisch**  
   *Chapter:* [203: From Footprints to Building Stock Insights](notebooks/203_footprints_to_building_stock_insights)  
   *Roles:* 3D Building Metrics, Spatial Lorenz/Gini Modeling, Decision-Support Pipeline.
-* **Marzan Tasnim Oyshi** & **Claudia Cruickshank**  
-  *Chapter:* [Urban Green Cooling Benefits with ioerDATA](chapters/200_community_index)  
-  *Roles:* ioerDATA Replication Package, [TBD]
 * **Gongmingyue Tang**  
-  *Chapter:* [Hidden Herons in Urban Spaces](chapters/200_community_index)  
-  *Roles:* StoryMap Creation, Biodiversity & [TBD], Public Knowledge Transfer.
+  *Chapter:* [204: A Story Map about Herons](notebooks/204_ToStoryMap_heronUrban)  
+  *Roles:* Interactive StoryMap Development, Urban Biodiversity & Habitat Analysis, Public Knowledge Transfer.
+* **Marzan Tasnim Oyshi & Claudia Cruickshank**  
+  *Chapter:* [205: Urban Green Cooling Benefits with ioerDATA](notebooks/205_urban_green)  
+  *Roles:* ioerDATA Replication Package, Urban Climate Regulation Analysis, Gamified Learning Workflow.
+* **Sujit Kumar Sikder & Sukanto Das**  
+  *Roles:* Circularity and Transformative Governance Contribution.
 
 ---
 
